@@ -22,7 +22,7 @@ function createIn3Middleware (config = {}) {
 
     if (in3Res.error) throw rpcErrors.internal(in3Res.error.toString(), in3Res.error)
 
-    // set result and exit retry loop
+    // set result
     res.result = in3Res;
     return
   })
