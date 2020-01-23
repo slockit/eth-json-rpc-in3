@@ -3,7 +3,7 @@ const IN3Wasm = require('in3-wasm').default
 module.exports = In3Spawn
 
 const defaultIn3Config = {
-  signatureCount: 0, // TODO: eth_blockNumber request fails when signature count is non zero
+  signatureCount: 2,
   maxAttempts: 5,
   proof: 'standard',
   keepIn3: false,
