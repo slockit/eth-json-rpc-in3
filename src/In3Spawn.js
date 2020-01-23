@@ -1,7 +1,5 @@
 const IN3Wasm = require('in3-wasm').default
 
-module.exports = In3Spawn
-
 const defaultIn3Config = {
   signatureCount: 2,
   maxAttempts: 5,
@@ -9,6 +7,9 @@ const defaultIn3Config = {
   keepIn3: false,
   replaceLatestBlock: 6
 }
+
+module.exports = In3Spawn
+module.exports.defaultIn3Config = defaultIn3Config
 
 let mainnetInstance = new IN3Wasm({ chainId: "mainnet", ... defaultIn3Config})
 let kovanInstance = new IN3Wasm({ chainId: "kovan", ... defaultIn3Config})
