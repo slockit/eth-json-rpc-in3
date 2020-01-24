@@ -12,7 +12,7 @@ const defaultIn3Config = {
   replaceLatestBlock: 10
 }
 
-const in3 = new IN3Wasm({ chainId: "0x0", ... defaultIn3Config})
+const in3 = new IN3Wasm({ chainId: "mainnet", ... defaultIn3Config})
 
 function createIn3Middleware (config = {}) {
 
@@ -25,7 +25,6 @@ function createIn3Middleware (config = {}) {
     let in3Res = await in3.sendRPC(req.method, req.params)
 
     if (req.method == "eth_blockNumber") {
-      console.log("Replaced with:", replaceLatestBlock)
       in3Res = "0x" + (parseInt(in3Res) - replaceLatestBlock).toString(16)
     }
 
