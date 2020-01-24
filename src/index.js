@@ -9,41 +9,23 @@ const defaultIn3Config = {
   maxAttempts: 5,
   proof: 'standard',
   keepIn3: false,
-  replaceLatestBlock: 6
+  replaceLatestBlock: 10
 }
 
-var In3Singleton = (function () {
-    var instance = null
-
-    function createInstance() {
-        var object = new IN3Wasm({ chainId: "0x0", ... defaultIn3Config})
-        return object;
-    }
-
-    return {
-      getInstance: function (config) {
-        if (!instance) {
-          instance = createInstance();
-          instance.setConfig(config)
-        } else {
-          //reconfigure in3
-          instance.setConfig(config)
-        }
-        return instance;
-      }
-    };
-})();
+const in3 = new IN3Wasm({ chainId: "0x0", ... defaultIn3Config})
 
 function createIn3Middleware (config = {}) {
 
-  //create a new client object
-  const in3 = In3Singleton.getInstance(config);
+  //reconfigure the client
+  in3.setConfig(config)
+
   const replaceLatestBlock = config.replaceLatestBlock || defaultIn3Config.replaceLatestBlock
 
   return createAsyncMiddleware(async (req, res, next) => {
     let in3Res = await in3.sendRPC(req.method, req.params)
 
     if (req.method == "eth_blockNumber") {
+      console.log("Replaced with:", replaceLatestBlock)
       in3Res = "0x" + (parseInt(in3Res) - replaceLatestBlock).toString(16)
     }
 
