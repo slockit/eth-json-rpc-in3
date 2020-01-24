@@ -26,10 +26,10 @@ fast-safe-stringify@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
   integrity sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
 
-in3-wasm@^2.1.0:
+in3-asmjs@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/in3-wasm/-/in3-wasm-2.1.0.tgz#7d91098c6c522db75b574ab93ec85737e0f68361"
-  integrity sha512-+FrS8z0HDBUd+kli9Qz6h82ZqlXaH73BljnABsE54OFXqR7S5er0a+VOh28L++Zz+FIdKzejyBlXs2E+YFq81Q==
+  resolved "https://registry.yarnpkg.com/in3-asmjs/-/in3-asmjs-2.1.0.tgz#9cd04df81043998934274ef9d6414cc952a45697"
+  integrity sha512-/f86fnQQNvLufp4fdNpVmbxnVQgrDM016LaFIgdBsFKorY+C5QIgRLzJVGbNkJCR4yJ2c9kWtvYczyaKt4f2rg==
 
 is-fn@^1.0.0:
   version "1.0.0"

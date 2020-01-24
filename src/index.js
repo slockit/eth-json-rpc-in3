@@ -1,6 +1,6 @@
 const { errors: rpcErrors } = require('eth-json-rpc-errors')
 const createAsyncMiddleware = require('json-rpc-engine/src/createAsyncMiddleware')
-const IN3Wasm = require('in3-wasm')
+const IN3asm = require('in3-asmjs')
 
 module.exports = createIn3Middleware
 
@@ -12,7 +12,7 @@ const defaultIn3Config = {
   replaceLatestBlock: 10
 }
 
-const in3 = new IN3Wasm({ chainId: "mainnet", ... defaultIn3Config})
+const in3 = new IN3asm({ chainId: "mainnet", ... defaultIn3Config})
 
 function createIn3Middleware (config = {}) {
 
