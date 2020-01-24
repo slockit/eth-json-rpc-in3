@@ -9,6 +9,7 @@
   "author": "Slock.it (Chirag Mahaveer Parmar)",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.5.5",
     "eth-json-rpc-errors": "^2.0.0",
     "in3-asmjs": "^2.1.0",
     "json-rpc-engine": "^5.1.6"
