@@ -18,8 +18,6 @@ function createIn3Middleware (config = {}) {
       in3Res = "0x" + (parseInt(in3Res) - replaceLatestBlock).toString(16)
     }
 
-    if(!req.params) console.log("EMPTY HAI")
-
     if (in3Res.error) throw rpcErrors.internal(in3Res.error.toString(), in3Res.error)
 
     // set result
