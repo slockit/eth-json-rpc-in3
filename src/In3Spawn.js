@@ -11,11 +11,11 @@ const defaultIn3Config = {
 module.exports = In3Spawn
 module.exports.defaultIn3Config = defaultIn3Config
 
-let mainnetInstance = new IN3asm({ chainId: "mainnet", ... defaultIn3Config})
-let kovanInstance = new IN3asm({ chainId: "kovan", ... defaultIn3Config})
-let goerliInstance = new IN3asm({ chainId: "goerli", ... defaultIn3Config})
-let rinkebyInstance = new IN3asm({ chainId: "rinkeby", ... defaultIn3Config})
-let ropstenInstance = new IN3asm({ chainId: "ropsten", ... defaultIn3Config})
+const mainnetInstance = new IN3asm({ chainId: "mainnet", ... defaultIn3Config})
+const kovanInstance = new IN3asm({ chainId: "kovan", ... defaultIn3Config})
+const goerliInstance = new IN3asm({ chainId: "goerli", ... defaultIn3Config})
+const rinkebyInstance = new IN3asm({ chainId: "rinkeby", ... defaultIn3Config})
+const ropstenInstance = new IN3asm({ chainId: "ropsten", ... defaultIn3Config})
 
 function In3Spawn(config = {}) {
   if (!config.chainId) {
