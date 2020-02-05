@@ -14,9 +14,11 @@ function createIn3Middleware (config = {}) {
   return createAsyncMiddleware(async (req, res, next) => {
     let in3Res = await in3.sendRPC(req.method, req.params);
 
-    if (req.method == "eth_blockNumber") {
+    if (req.method == "eth_blockNumber" && in3Res) {
       in3Res = "0x" + (parseInt(in3Res) - replaceLatestBlock).toString(16);
     }
+
+    if(!in3Res) throw new Error("Couldn't get the response using In3");
 
     if (in3Res.error) throw rpcErrors.internal(in3Res.error.toString(), in3Res.error);
 
