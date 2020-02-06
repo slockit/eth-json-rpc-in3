@@ -1,15 +1,7 @@
 const IN3asm = require('in3-asmjs').default;
-
-const defaultIn3Config = {
-  signatureCount: 2,
-  maxAttempts: 5,
-  proof: 'standard',
-  keepIn3: false,
-  replaceLatestBlock: 10
-};
+const defaultIn3Config = require("./defaultIn3Config.js")
 
 module.exports = In3Spawn;
-module.exports.defaultIn3Config = defaultIn3Config;
 
 const mainnetInstance = new IN3asm({ chainId: "mainnet", ... defaultIn3Config});
 const kovanInstance = new IN3asm({ chainId: "kovan", ... defaultIn3Config});

@@ -1,0 +1,212 @@
+[
+  {
+    "testMessage": "Get block by number",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_getBlockByNumber",
+      "params": ["0x6FD193", false]
+    },
+    "exp_result":{
+      "author":"0x00e6d2b931f55a3f1701c7389d592a7778897879",
+      "difficulty":"0xfffffffffffffffffffffffffffffffe",
+      "extraData":"0xd583010a008650617269747986312e32342e31826c69",
+      "gasLimit":"0x7a11f8",
+      "gasUsed":"0xb371",
+      "hash":"0xbe96c4363ca5870afd99826eb5ecee2624ed2163fda24ee9646debe4fe0fa115",
+      "logsBloom":"0x00000000000000000000000000200000000000000000000000000000000000000000000000000000200000000000000000000000000000002000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000008000000000000000000000000000000000000040000000000000200000000004000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000010000000000000000000000000000000000000000000000000000000000000",
+      "miner":"0x00e6d2b931f55a3f1701c7389d592a7778897879",
+      "number":"0x6fd193",
+      "parentHash":"0x86ef03c35328cd54a241a7c357aaed8427fce98f688a75f223adcb27156eda96",
+      "receiptsRoot":"0x1da2d40da0f78a298a036dcfacb14f9c4e3c2038c46662b694a315ec46c063c6",
+      "sealFields":["0x8416bf6441", "0xb841a558a24a722509f8670abdd6988c4d0d3b43f8b58c533d61b16c3bd6d382bb5f6b4205bc9242f2e2e63fadbfc031e66319a379c0adb2e423ad63b1c299e9685d00"],
+      "sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+      "signature": "a558a24a722509f8670abdd6988c4d0d3b43f8b58c533d61b16c3bd6d382bb5f6b4205bc9242f2e2e63fadbfc031e66319a379c0adb2e423ad63b1c299e9685d00",
+      "size":"0x2f4",
+      "stateRoot":"0x65dddf19f4890e08d004a845d524dc71cf84e9fe634791c4bbf99a3e1933a194",
+      "step": "381641793",
+      "timestamp":"0x5afd9104",
+      "totalDifficulty":"0x6d8e840000000000000000000000048527bb55",
+      "transactions":["0x3fffe8affd3c92c2dec60c000fec52ab690ebbee31729e09473ab2e38b9c0ee7"],
+      "transactionsRoot":"0xa9fa7baa1db47f08eb00933d7a9ed1331835a543baeda0226211cd7139e44931",
+      "uncles":[]
+    }
+  },
+  {
+    "testMessage": "Get block by hash",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_getBlockByHash",
+      "params": ["0xbe96c4363ca5870afd99826eb5ecee2624ed2163fda24ee9646debe4fe0fa115", false]
+    },
+    "exp_result":{
+      "author":"0x00e6d2b931f55a3f1701c7389d592a7778897879",
+      "difficulty":"0xfffffffffffffffffffffffffffffffe",
+      "extraData":"0xd583010a008650617269747986312e32342e31826c69",
+      "gasLimit":"0x7a11f8",
+      "gasUsed":"0xb371",
+      "hash":"0xbe96c4363ca5870afd99826eb5ecee2624ed2163fda24ee9646debe4fe0fa115",
+      "logsBloom":"0x00000000000000000000000000200000000000000000000000000000000000000000000000000000200000000000000000000000000000002000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000008000000000000000000000000000000000000040000000000000200000000004000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000010000000000000000000000000000000000000000000000000000000000000",
+      "miner":"0x00e6d2b931f55a3f1701c7389d592a7778897879",
+      "number":"0x6fd193",
+      "parentHash":"0x86ef03c35328cd54a241a7c357aaed8427fce98f688a75f223adcb27156eda96",
+      "receiptsRoot":"0x1da2d40da0f78a298a036dcfacb14f9c4e3c2038c46662b694a315ec46c063c6",
+      "sealFields":["0x8416bf6441", "0xb841a558a24a722509f8670abdd6988c4d0d3b43f8b58c533d61b16c3bd6d382bb5f6b4205bc9242f2e2e63fadbfc031e66319a379c0adb2e423ad63b1c299e9685d00"],
+      "sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+      "signature": "a558a24a722509f8670abdd6988c4d0d3b43f8b58c533d61b16c3bd6d382bb5f6b4205bc9242f2e2e63fadbfc031e66319a379c0adb2e423ad63b1c299e9685d00",
+      "size":"0x2f4",
+      "stateRoot":"0x65dddf19f4890e08d004a845d524dc71cf84e9fe634791c4bbf99a3e1933a194",
+      "step": "381641793",
+      "timestamp":"0x5afd9104",
+      "totalDifficulty":"0x6d8e840000000000000000000000048527bb55",
+      "transactions":["0x3fffe8affd3c92c2dec60c000fec52ab690ebbee31729e09473ab2e38b9c0ee7"],
+      "transactionsRoot":"0xa9fa7baa1db47f08eb00933d7a9ed1331835a543baeda0226211cd7139e44931",
+      "uncles":[]
+    }
+  },
+  {
+    "testMessage": "Get transaction by hash",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_getTransactionByHash",
+      "params": ["0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa"]
+    },
+    "exp_result": {
+      "blockHash": "0x142f91051374aebb3ae4d09ff5dc1363cc4f4c7f4d61b60592525f07197fc344",
+      "blockNumber": "0xa0ace0",
+      "chainId": null,
+      "condition": null,
+      "creates": null,
+      "from": "0xb06f42c825c18ca0c343b99ed8f9639bafdd571d",
+      "gas": "0x7d08",
+      "gasPrice": "0x3b9aca00",
+      "hash": "0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa",
+      "input": "0x095ea7b3000000000000000000000000f1ec01d6236d3cd881a0bf0130ea25fe4234003effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "nonce": "0x513d",
+      "publicKey": "0xe8b5531f7a10c44b9375ee90d6ed1f035aa162ce598111153ea7f1be5053af5e38260ee0a788798db575799d8b94d53c7fcfa18eb1e272fc0e7a452bf6ea9ac4",
+      "r": "0x30482a0ff64d082133cd70f56459bf5671fbefc040a4694958d2a2b7cffe7f45",
+      "raw": "0xf8aa82513d843b9aca00827d08942002d3812f58e35f0ea1ffbf80a75a38c32175fa80b844095ea7b3000000000000000000000000f1ec01d6236d3cd881a0bf0130ea25fe4234003effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1ca030482a0ff64d082133cd70f56459bf5671fbefc040a4694958d2a2b7cffe7f45a02fb9a8c607c0866d163412dbf6c35d2a2c1420309512faa79121a62a60dc537a",
+      "s": "0x2fb9a8c607c0866d163412dbf6c35d2a2c1420309512faa79121a62a60dc537a",
+      "standardV": "0x1",
+      "to": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
+      "transactionIndex": "0x0",
+      "v": "0x1c",
+      "value": "0x0"
+    }
+  },
+  {
+    "testMessage": "Get transaction by Block Hash and Index",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_getTransactionByBlockHashAndIndex",
+      "params": ["0x142f91051374aebb3ae4d09ff5dc1363cc4f4c7f4d61b60592525f07197fc344", "0x0"]
+    },
+    "exp_result":{
+      "blockHash": "0x142f91051374aebb3ae4d09ff5dc1363cc4f4c7f4d61b60592525f07197fc344",
+      "blockNumber": "0xa0ace0",
+      "chainId": null,
+      "condition": null,
+      "creates": null,
+      "from": "0xb06f42c825c18ca0c343b99ed8f9639bafdd571d",
+      "gas": "0x7d08",
+      "gasPrice": "0x3b9aca00",
+      "hash": "0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa",
+      "input": "0x095ea7b3000000000000000000000000f1ec01d6236d3cd881a0bf0130ea25fe4234003effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "nonce": "0x513d",
+      "publicKey": "0xe8b5531f7a10c44b9375ee90d6ed1f035aa162ce598111153ea7f1be5053af5e38260ee0a788798db575799d8b94d53c7fcfa18eb1e272fc0e7a452bf6ea9ac4",
+      "r": "0x30482a0ff64d082133cd70f56459bf5671fbefc040a4694958d2a2b7cffe7f45",
+      "raw": "0xf8aa82513d843b9aca00827d08942002d3812f58e35f0ea1ffbf80a75a38c32175fa80b844095ea7b3000000000000000000000000f1ec01d6236d3cd881a0bf0130ea25fe4234003effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1ca030482a0ff64d082133cd70f56459bf5671fbefc040a4694958d2a2b7cffe7f45a02fb9a8c607c0866d163412dbf6c35d2a2c1420309512faa79121a62a60dc537a",
+      "s": "0x2fb9a8c607c0866d163412dbf6c35d2a2c1420309512faa79121a62a60dc537a",
+      "standardV": "0x1",
+      "to": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
+      "transactionIndex": "0x0",
+      "v": "0x1c",
+      "value": "0x0"
+    }
+  },
+  {
+    "testMessage": "Get transaction receipt by hash",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_getTransactionReceipt",
+      "params": ["0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa"]
+    },
+    "exp_result":{
+      "blockHash": "0x142f91051374aebb3ae4d09ff5dc1363cc4f4c7f4d61b60592525f07197fc344",
+      "blockNumber": "0xa0ace0",
+      "contractAddress": null,
+      "cumulativeGasUsed": "0x7d08",
+      "from": "0xb06f42c825c18ca0c343b99ed8f9639bafdd571d",
+      "gasUsed": "0x7d08",
+      "logs": [
+        {
+          "address": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
+          "blockHash": "0x142f91051374aebb3ae4d09ff5dc1363cc4f4c7f4d61b60592525f07197fc344",
+          "blockNumber": "0xa0ace0",
+          "data": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+          "logIndex": "0x0",
+          "removed": false,
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000b06f42c825c18ca0c343b99ed8f9639bafdd571d",
+            "0x000000000000000000000000f1ec01d6236d3cd881a0bf0130ea25fe4234003e"
+          ],
+          "transactionHash": "0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa",
+          "transactionIndex": "0x0",
+          "transactionLogIndex": "0x0",
+          "type": "mined"
+        }
+      ],
+      "logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000002000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000002008000000000000000000000000000000000000000000020000000400000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000005000000000000000000000000000000000000000",
+      "root": null,
+      "status": "0x1",
+      "to": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
+      "transactionHash": "0x40af0e3a63156f6ee2657d22452b0f43546a2364de30b00f8966aec965678ffa",
+      "transactionIndex": "0x0"
+    }
+  },
+  {
+    "testMessage": "Eth Call",
+    "config": {
+      "chainId": "kovan",
+      "proof": "standard",
+      "signatureCount": 1,
+      "maxAttempts": 5
+    },
+    "request": {
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x27a37a1210df14f7e058393d026e2fb53b7cf8c1",
+          "data": "0x15625c5e"
+        },
+        "0xFD2C8B"
+      ]
+    },
+    "exp_result":"0x0000000000000000000000000000000000000000000000000000000000000005"
+  }
+]
