@@ -5,7 +5,7 @@
       "chainId": "mainnet",
       "proof": "standard",
       "signatureCount": 1,
-      "maxAttempts": 5
+      "maxAttempts": 15
     },
     "request": {
       "method": "eth_getBlockByNumber",
@@ -73,7 +73,7 @@
       "chainId": "mainnet",
       "proof": "standard",
       "signatureCount": 1,
-      "maxAttempts": 5
+      "maxAttempts": 15
     },
     "request": {
       "method": "eth_getBlockByHash",
@@ -141,7 +141,7 @@
       "chainId": "mainnet",
       "proof": "standard",
       "signatureCount": 1,
-      "maxAttempts": 5
+      "maxAttempts": 15
     },
     "request": {
       "method": "eth_getTransactionByHash",
@@ -176,7 +176,7 @@
       "chainId": "mainnet",
       "proof": "standard",
       "signatureCount": 1,
-      "maxAttempts": 5
+      "maxAttempts": 15
     },
     "request": {
       "method": "eth_getTransactionByBlockHashAndIndex",
@@ -211,7 +211,7 @@
       "chainId": "mainnet",
       "proof": "standard",
       "signatureCount": 1,
-      "maxAttempts": 5
+      "maxAttempts": 15
     },
     "request": {
       "method": "eth_getTransactionReceipt",
