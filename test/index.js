@@ -9,18 +9,18 @@ const RpcEngine = require('json-rpc-engine')
 const assert = require('chai').assert;
 const defaultIn3Config = require('../src/defaultIn3Config.js')
 
-describe('JSON-RPC-MAINNET', () => {
-
-  const tests = JSON.parse(fs.readFileSync("./test/mainnetTests.json", 'utf8').toString())
-
-  for (const testCase of tests) {
-    it(testCase.testMessage, async () => {
-      const result = await handleTestCase(testCase)
-      assert.deepEqual(result, testCase.exp_result)
-    })
-  }
-
-})
+// describe('JSON-RPC-MAINNET', () => {
+//
+//   const tests = JSON.parse(fs.readFileSync("./test/mainnetTests.json", 'utf8').toString())
+//
+//   for (const testCase of tests) {
+//     it(testCase.testMessage, async () => {
+//       const result = await handleTestCase(testCase)
+//       assert.deepEqual(result, testCase.exp_result)
+//     })
+//   }
+//
+// })
 
 describe('JSON-RPC-KOVAN', () => {
 
