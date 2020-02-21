@@ -23,12 +23,15 @@ function In3Spawn(config = {}) {
   }
 
   if (checkChainId(config.chainId, "kovan")) {
+    config.chainId = 'kovan' //overwrite chainId after checking it.
     kovanInstance.setConfig(config);
     return kovanInstance;
   } else if (checkChainId(config.chainId, "goerli")) {
+    config.chainId = 'goerli' //overwrite chainId after checking it.
     goerliInstance.setConfig(config);
     return goerliInstance;
   } else if (checkChainId(config.chainId, "mainnet")) {
+    config.chainId = 'mainnet' //overwrite chainId after checking it.
     mainnetInstance.setConfig(config);
     return mainnetInstance;
   }
