@@ -4,7 +4,7 @@
 * test blacklist resetting at >50% blacklisting.
 */
 
-const createIn3Middleware = require("../src/index.js");
+const createIn3Middleware = require("../src/index.js").default;
 const RpcEngine = require('json-rpc-engine')
 const assert = require('chai').assert;
 const defaultIn3Config = require('../src/defaultIn3Config.js')
