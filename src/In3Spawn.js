@@ -1,7 +1,7 @@
 const IN3asm = require('in3-asmjs').default;
 const defaultIn3Config = require("./defaultIn3Config.js")
 
-module.exports = In3Spawn;
+module.exports = in3Spawn;
 
 const mainnetInstance = new IN3asm({ chainId: "mainnet", ... defaultIn3Config});
 const kovanInstance = new IN3asm({ chainId: "kovan", ... defaultIn3Config});
@@ -17,7 +17,7 @@ function checkChainId(unknownId, chainName) {
   return chainIdMap[chainName].includes(unknownId)
 }
 
-function In3Spawn(config = {}) {
+function in3Spawn(config = {}) {
   if (!config.chainId) {
     throw new Error("config has no property chainId");
   }
