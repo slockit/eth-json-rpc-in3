@@ -3,7 +3,11 @@ const createAsyncMiddleware = require('json-rpc-engine/src/createAsyncMiddleware
 const In3Spawn = require('./In3Spawn.js');
 const defaultIn3Config = require('./defaultIn3Config.js');
 
-module.exports = createIn3Middleware;
+module.exports = {
+  default: createIn3Middleware,
+  In3Spawn,
+  defaultIn3Config
+}
 
 function createIn3Middleware (config = {}) {
 
